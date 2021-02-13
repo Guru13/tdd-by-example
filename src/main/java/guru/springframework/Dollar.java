@@ -15,5 +15,9 @@ public class Dollar {
         return new Dollar(amount * multiplier);
     }
 
-
+    @Override
+    public boolean equals(Object o) {
+        Dollar dollar = (Dollar) o;
+        return amount == dollar.amount;
+    }
 }
